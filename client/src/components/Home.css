@@ -1,0 +1,107 @@
+ 
+  .text_icon {
+    margin-top: 8px;
+    color: #707070;
+    font-size: 13px;
+  }
+
+  .msg-container{
+    display: inline-flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* width: 3.5%; */
+    flex-direction: column;
+    position: fixed;
+    top: 45%;
+    z-index: 1000;
+    font-size: 1.5rem;
+    font-weight: 300;
+    cursor: pointer;
+  }
+  
+  .msg-container .msg-icons{
+    display: flex;
+    justify-content: center;
+    padding: 10% 65%;
+    /* padding: 10% 30% 10% 60%; */
+    background-color: #2091fe;
+    /* border-radius: 25px; */
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+
+  .msg-container i, .msg-container a{
+    color: white;
+    /* position: relative;
+    left: 15%; */
+  }
+
+  .msg-container .msg-icon-2{
+    display: none;
+  }
+
+  .whatsapp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 100%; */
+    background-color: #42db87;
+    padding: 10% 65%;
+    /* padding: 10% 30% 10% 60%; */
+    position: relative;
+    /* border-radius: 6px; */
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    /* left: -160%; */
+  }
+
+  .whatsapp:hover{
+    background-color: #1bc869;
+  }
+
+  .sms{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 100%; */
+    background-color: #218aff;
+    padding: 10% 63%;
+    /* padding: 10% 30% 10% 60%; */
+    position: relative;
+    /* border-radius: 6px; */
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    /* left: -160%; */
+  }
+
+  .sms:hover{
+    background-color: #0979f9;
+  }
+  
+  .animate-3{
+    animation: moveright-3 .7s forwards;
+
+  }
+
+  .animate-4{
+    animation: moveleft-4 .7s forwards;
+
+  }
+
+  @keyframes moveright-3 {
+    from{
+      left: -160%;
+    }
+    to{
+      left: 0%;
+    }
+  }
+
+  @keyframes moveleft-4{
+    from{
+      left: 0%;
+    }
+    to{
+      left: -160%;
+    }
+  }
