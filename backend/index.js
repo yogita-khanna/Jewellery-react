@@ -15,7 +15,6 @@ app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-
 app.use(express.static(path.join(__dirname, 'public')));
 
 mongoose.connect(MONGODB_URI, {
@@ -30,11 +29,13 @@ mongoose.connect(MONGODB_URI, {
 });
 
 app.use('/api', require('./routes/contactus'));
+app.get("/", (req, res)=>{
+  console.log("Hello");
+})
 
-
-app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, 'public', 'index.html'));
-});
+// app.get('*', (req, res) => {
+//   res.sendFile(path.resolve(__dirname, 'public', 'index.html'));
+// });
 
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
