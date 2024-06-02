@@ -2,16 +2,20 @@
 {
   "version": 2,
   "builds": [
-   {
-       "src": "./server.js",
-       "use": "@vercel/node"
-   }
+    {
+      "src": "server.js",
+      "use": "@vercel/node"
+    }
   ],
+  "env": {
+    "EMAIL": "khannayogita723@gmail.com",
+    "PASSWORD": "yxhb pdfc derh onpw"
+  },
   "routes": [
-   {
-       "src": "/(.*)",
-       "dest": "/"
-   }
+    {
+      "src": "/(.*)",
+      "dest": "/server.js"
+    }
   ],
-  "rewrites": [{ "source": "/(.*)", "destination": "/api" }] 
+  "rewrites": [{ "source": "/(.*)", "destination": "/" }] 
 }
