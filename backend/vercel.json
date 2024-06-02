@@ -17,5 +17,13 @@
       "dest": "/server.js"
     }
   ],
-  "rewrites": [{ "source": "/(.*)", "destination": "/" }] 
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.js"
+    }
+  ],
+  "cleanUrls": true,
+  "trailingSlash": false
+ 
 }
