@@ -30,7 +30,7 @@ mongoose.connect(MONGODB_URI, {
 
 app.use('/api', require('./routes/contactus'));
 app.get("/", (req, res)=>{
-  console.log("Hello");
+  res.send("Hello");
 })
 
 // app.get('*', (req, res) => {
