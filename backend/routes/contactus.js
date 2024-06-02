@@ -6,6 +6,9 @@ const nodemailer = require("nodemailer");
 const dotenv = require("dotenv");
 dotenv.config();
 
+router.get('/', (req,res)=>{
+  res.send({test: "test is working"});
+})
 const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
   port: 587,
