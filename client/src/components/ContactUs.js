@@ -147,7 +147,7 @@ function ContactUs({ onSearchChange }) {
     }
 
     try {
-      const response = await axios.post("http://localhost:4444/api/contact", {
+      const response = await axios.post("https://jewellery-react2.vercel.app/api/contact", {
         name,
         email,
         message,
